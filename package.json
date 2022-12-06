@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zmarc3ll/TestJS/issues"
   },
-  "homepage": "https://github.com/zmarc3ll/TestJS#readme"
+  "homepage": "https://github.com/zmarc3ll/TestJS#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
 }

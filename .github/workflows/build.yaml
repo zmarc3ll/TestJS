@@ -1,0 +1,21 @@
+name: Build
+
+on: 
+  push: 
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  
+bs: 
+  build: 
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+
+      - name: Install Node
+        uses: actions/setup-nod@v3
+        with: 
+          node-version: 16.13
+      - run: npm install
+      - run: npx sass .\sass\style.css .\build\css\style.css
+      - run: ls -lha .\build\css\
